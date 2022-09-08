@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import Stars from './components/Stars/Stars.jsx'
+import StarRating from './components/StarRating/StarRating.jsx'
 
 render(
-    <Stars />,
+    <StarRating />,
     document.getElementById('root')
 );
