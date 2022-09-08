@@ -1,14 +1,24 @@
-import React from 'react';
-import Star from '../Star/Star.jsx'
+import React, { useState } from 'react';
+import Star from '../Star/Star.jsx';
 
-const Stars = () => {
-    const createArray = length => [...Array(length)]
-   console.log(createArray(5)) 
+const Stars = ({ total = 5 }) => {
+    const createArray = (length) => [...Array(length)];
+    const [selectedStars, setSelectedStar] = useState(0);
+
     return (
         <div>
-            {createArray(5).map((n, i) => {
-                return <Star ket={i}/>;
+            {createArray(total).map((n, i) => {
+                return (
+                    <Star
+                        key={i}
+                        selected={selectedStars > i}
+                        onSelect={() => setSelectedStar(i + 1)}
+                    />
+                );
             })}
+            <div>
+                {selectedStars} of {total} stars
+            </div>
         </div>
     );
 };
