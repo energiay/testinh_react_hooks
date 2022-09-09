@@ -125,12 +125,12 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
         alias: {
-            '@components': path.resolve(__dirname, './../src/components'),
-            '@hooks': path.resolve(__dirname, './../src/hooks'),
-            '@lib': path.resolve(__dirname, './../src/lib'),
-            '@imgs': path.resolve(__dirname, './../public/imgs'),
-            '@app': path.resolve(__dirname, './../src/components/app'),
-            '@contexts': path.resolve(__dirname, './../src/contexts'),
+            '@components': path.resolve(__dirname, './src/components'),
+            '@hooks': path.resolve(__dirname, './src/hooks'),
+            '@lib': path.resolve(__dirname, './src/lib'),
+            '@imgs': path.resolve(__dirname, './public/imgs'),
+            '@app': path.resolve(__dirname, './src/components/app'),
+            '@contexts': path.resolve(__dirname, './src/contexts'),
         },
     },
 };
