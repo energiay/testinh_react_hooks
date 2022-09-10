@@ -1,15 +1,18 @@
 [
     {
+        "id": 1,
         "title": "title 1",
         "color": "#e4e4e4",
         "rating": 3
     },
     {
+        "id": 2,
         "title": "title 2",
         "color": "#000",
         "rating": 0 
     },
     {    
+        "id": 3,
         "title": "title 3",
         "color": "#777",
         "rating": 4 
