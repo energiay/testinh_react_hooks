@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Star from '../Star/Star.jsx';
-import { FaTrash } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 
 const StarRating = ({ total = 5, style = {} }) => {
@@ -21,7 +20,6 @@ const StarRating = ({ total = 5, style = {} }) => {
             <div>
                 {selectedStars} of {total} stars
             </div>
-            <FaTrash />
         </div>
     );
 };
