@@ -2,6 +2,7 @@ import React from 'react'
 import StarRating from '@components/StarRating/StarRating.jsx'
 import Form from '@components/Form/Form.jsx'
 import Colors from '@components/Colors/Colors.jsx'
+import ColorProvider from '@hooks/useColorProvider.jsx';
 
 const App = () => {
     return (
@@ -10,7 +11,9 @@ const App = () => {
             <hr />
             <Form />
             <hr />
-            <Colors />
+            <ColorProvider>
+                <Colors />
+            </ColorProvider>
         </div>
     )
 }
