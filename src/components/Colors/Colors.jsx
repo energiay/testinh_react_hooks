@@ -6,9 +6,9 @@ import { useColors } from '@hooks/useColorProvider.jsx';
 const Colors = () => {
     const { colors, removeColor } = useColors();
 
-    return colors.map(color => {
+    return colors.map((color, index) => {
         return (
-            <div>
+            <div key={index}>
                 <h1>{color.title}</h1>
                 <span onClick={() => removeColor(color.id)}>
                     <FaTrash />
