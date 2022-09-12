@@ -9,6 +9,7 @@ const App = () => {
     return (
         <div>
             <TestReducer />
+            <hr/>
             <StarRating />
             <hr />
             <Form />
