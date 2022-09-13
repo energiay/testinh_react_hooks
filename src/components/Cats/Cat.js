@@ -10,4 +10,4 @@ const Cat = ({ name, meu = (f) => f }) => {
     );
 };
 
-export default memo(Cat);
+export default memo(Cat, (prevPropd, nextProps) => prevPropd.name === nextProps.name);
