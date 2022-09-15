@@ -1,4 +1,5 @@
 import React from 'react';
+import { FixedSizeList } from 'react-window'
 
 const bigList = [...Array(5000)].map((elem, index) => {
     return {
@@ -9,13 +10,23 @@ const bigList = [...Array(5000)].map((elem, index) => {
 });
 
 const VirtualRendering = () => {
-    console.log(bigList);
-    return (
-        <div>
-            {bigList.map((elem, index) => {
-                return <div key={index}>{elem.name}</div>;
-            })}
+
+    const renderRow = ({index, style}) => {
+        return <div style={{...style}}>
+            {bigList[index].name}
         </div>
+    }
+
+    return (
+        <FixedSizeList
+            //height={window.innerHeight}
+            height={100}
+            width={window.innerWidth - 20}
+            itemCount={bigList.length}
+            itemSize={19}
+        >
+            {renderRow}
+        </FixedSizeList>
     );
 };
 
