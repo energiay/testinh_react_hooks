@@ -1,14 +1,19 @@
-import React from 'react'
+import React from 'react';
+import useIterator from './useIterator.js';
 
 const data = [...Array(15)].map((elem, index) => {
-    return 'element' + index
-})
+    return 'element' + index;
+});
 
 const Iterator = () => {
-    console.log(data)
+    const [item, prev, next] = useIterator(data);
+    console.log(item);
     return (
-        <div>Iterator</div>
-    )
-}
+        <div>
+            <div onClick={prev}>Prev</div>
+            <div onClick={next}>Next</div>
+        </div>
+    );
+};
 
-export default Iterator
+export default Iterator;
