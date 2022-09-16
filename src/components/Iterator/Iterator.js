@@ -9,9 +9,10 @@ const Iterator = () => {
     const [item, prev, next] = useIterator(data);
     console.log(item);
     return (
-        <div>
-            <div onClick={prev}>Prev</div>
-            <div onClick={next}>Next</div>
+        <div style={{display: 'flex'}}>
+            <div onClick={prev} style={{cursor: 'pointer'}}>Prev</div>
+            <div>{item}</div>
+            <div onClick={next} style={{cursor: 'pointer'}}>Next</div>
         </div>
     );
 };
