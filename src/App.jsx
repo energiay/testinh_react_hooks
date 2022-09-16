@@ -6,11 +6,14 @@ import ColorProvider from '@hooks/useColorProvider.jsx';
 import TestReducer from '@components/TestReducer/TestReducer.js';
 import Cats from '@components/Cats/Cats.js';
 import VirtualRendering from '@components/VirtualRendering/VirtualRendering.js'
+import Iterator from '@components/Iterator/Iterator.js'
 
 
 const App = () => {
     return (
         <div>
+            <Iterator />
+            <hr />
             <VirtualRendering />
             <hr />
             <Cats />
