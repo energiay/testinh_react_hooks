@@ -7,11 +7,14 @@ import TestReducer from '@components/TestReducer/TestReducer.js';
 import Cats from '@components/Cats/Cats.js';
 import VirtualRendering from '@components/VirtualRendering/VirtualRendering.js'
 import Iterator from '@components/Iterator/Iterator.js'
+import MountComponent from '@components/MountComponent/MountComponent.js'
 
 
 const App = () => {
     return (
         <div>
+            <MountComponent />
+            <hr />
             <Iterator />
             <hr />
             <VirtualRendering />
