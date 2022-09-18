@@ -8,11 +8,14 @@ import Cats from '@components/Cats/Cats.js';
 import VirtualRendering from '@components/VirtualRendering/VirtualRendering.js'
 import Iterator from '@components/Iterator/Iterator.js'
 import MountComponent from '@components/MountComponent/MountComponent.js'
+import Loader from '@components/Loader/Loader.js'
 
 
 const App = () => {
     return (
         <div>
+            <Loader />
+            <hr />
             <MountComponent />
             <hr />
             <Iterator />
